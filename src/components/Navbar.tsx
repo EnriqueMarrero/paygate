@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, X, Twitter } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Navbar() {
@@ -45,8 +45,15 @@ export function Navbar() {
                     <div className="h-4 w-px bg-white/10" />
 
                     <div className="flex items-center gap-4">
-                        <a href="#" className="text-neutral-500 hover:text-white transition-colors">
-                            <Twitter className="w-4 h-4" />
+                        <a
+                            href="https://x.com/VelocitySystem"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-neutral-500 hover:text-white transition-colors native-touch"
+                        >
+                            <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -96,8 +103,15 @@ export function Navbar() {
 
                     <div className="mt-auto border-t border-white/10 pt-8 flex items-center justify-between">
                         <div className="flex gap-6">
-                            <a href="#" className="text-primary hover:text-white transition-colors native-touch">
-                                <Twitter className="w-6 h-6" />
+                            <a
+                                href="https://x.com/VelocitySystem"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-primary hover:text-white transition-colors native-touch"
+                            >
+                                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                </svg>
                             </a>
                         </div>
                         <div className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
