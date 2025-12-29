@@ -5,7 +5,7 @@ import { Copy, Check, Hash } from "lucide-react";
 
 export function ContractAddress() {
     const [copied, setCopied] = useState(false);
-    const CA = "DectFg9dVy4EjVcYvqPXRJ3EHK6E74YDZKDZMfc8pump";
+    const CA = "GZvtCuPeMcYRaBMBm6wcxBPabV8tmj4TpduJBU3spump";
 
     const handleCopy = () => {
         navigator.clipboard.writeText(CA);
