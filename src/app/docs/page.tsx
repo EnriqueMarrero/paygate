@@ -21,6 +21,7 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 
 const CHAPTERS = [
+    { id: "00", title: "SYSTEM_OVERVIEW", icon: Activity },
     { id: "01", title: "ENVIRONMENT_HANDSHAKE", icon: Shield },
     { id: "02", title: "RUNTIME_INTEGRATION", icon: Terminal },
     { id: "03", title: "CONTAINER_MOUNTING", icon: Layers },
@@ -101,7 +102,7 @@ function CodeFrame({ filename, code, language = "js" }: { filename: string, code
 
 
 export default function Docs() {
-    const [activeChapter, setActiveChapter] = useState("01");
+    const [activeChapter, setActiveChapter] = useState("00");
 
     return (
         <main className="min-h-screen bg-black text-neutral-400 font-mono selection:bg-primary selection:text-black flex flex-col">
@@ -158,6 +159,66 @@ export default function Docs() {
                             <ChevronRight className="w-2.5 h-2.5" />
                             <span className="truncate">{CHAPTERS.find(c => c.id === activeChapter)?.title}</span>
                         </div>
+
+                        {activeChapter === "00" && (
+                            <div className="space-y-8 md:space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                                <div className="space-y-6">
+                                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+                                        System_<span className="text-primary">Overview</span>
+                                    </h1>
+                                    <p className="text-[10px] md:text-sm leading-relaxed uppercase opacity-80 border-l-2 border-primary/30 pl-4">
+                                        Velocity is a sub-second access protocol designed to bridge digital assets and software permissions instantly.
+                                        Think of it as a <span className="text-white">programmable key</span> that unlocks digital doors the moment a handshake is verified.
+                                    </p>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div className="p-6 industrial-border bg-white/[0.02] space-y-4">
+                                        <div className="flex items-center gap-2 text-primary">
+                                            <Zap className="w-4 h-4" />
+                                            <span className="text-[10px] font-black uppercase tracking-widest">Core_Function</span>
+                                        </div>
+                                        <h3 className="text-lg font-bold text-white uppercase tracking-tight">Software Unlocking</h3>
+                                        <p className="text-[10px] text-neutral-500 uppercase leading-relaxed">
+                                            Replace archaic login forms with sub-second handshakes. Users pay a micro-fee and instantly gain access to your SaaS, Premium Features, or Digital Content.
+                                        </p>
+                                    </div>
+
+                                    <div className="p-6 industrial-border bg-white/[0.02] space-y-4">
+                                        <div className="flex items-center gap-2 text-primary">
+                                            <Activity className="w-4 h-4" />
+                                            <span className="text-[10px] font-black uppercase tracking-widest">Protocol_Use</span>
+                                        </div>
+                                        <h3 className="text-lg font-bold text-white uppercase tracking-tight">Gated Infrastructure</h3>
+                                        <p className="text-[10px] text-neutral-500 uppercase leading-relaxed">
+                                            Secure your APIs or Private Servers behind a Velocity layer. Only verified protocol participants can establish a connection, preventing bot spam and unauthorized usage.
+                                        </p>
+                                    </div>
+
+                                    <div className="p-6 industrial-border bg-white/[0.02] space-y-4">
+                                        <div className="flex items-center gap-2 text-primary">
+                                            <Layers className="w-4 h-4" />
+                                            <span className="text-[10px] font-black uppercase tracking-widest">Digital_Logistics</span>
+                                        </div>
+                                        <h3 className="text-lg font-bold text-white uppercase tracking-tight">Dynamic Paywalls</h3>
+                                        <p className="text-[10px] text-neutral-500 uppercase leading-relaxed">
+                                            Implement pay-per-view or pay-per-buffer models with zero friction. Users unlock content one packet at a time without ever seeing a credit card form.
+                                        </p>
+                                    </div>
+
+                                    <div className="p-6 industrial-border bg-primary/5 space-y-4 border-primary/20">
+                                        <div className="flex items-center gap-2 text-primary">
+                                            <Shield className="w-4 h-4" />
+                                            <span className="text-[10px] font-black uppercase tracking-widest">Security_Standard</span>
+                                        </div>
+                                        <h3 className="text-lg font-bold text-white uppercase tracking-tight">Handshake Verified</h3>
+                                        <p className="text-[10px] text-primary/60 uppercase leading-relaxed font-black">
+                                            Every transaction results in a cryptographically signed session key that your backend can verify in milliseconds.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
 
                         {activeChapter === "01" && (
                             <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
