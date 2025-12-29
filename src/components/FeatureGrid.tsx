@@ -2,7 +2,7 @@ import { Cpu, Zap, ShieldCheck, ArrowRight } from "lucide-react";
 
 export function FeatureGrid() {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-white/5 border border-white/5 overflow-hidden industrial-border">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 border border-white/5 overflow-hidden industrial-border">
             {/* 01: Protocol Layer */}
             <div className="p-8 space-y-4 bg-black group hover:bg-primary/[0.02] transition-colors">
                 <div className="flex justify-between items-start">

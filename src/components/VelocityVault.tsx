@@ -122,7 +122,7 @@ export function VelocityVault() {
                 {!loading && (
                     <button
                         onClick={startSync}
-                        className="group relative w-full max-w-xs overflow-hidden bg-primary px-8 py-4 text-black transition-all hover:bg-white active:translate-y-px font-black text-[10px] uppercase tracking-[0.3em] shadow-[0_0_30px_rgba(0,240,255,0.1)]"
+                        className="group relative w-full max-w-xs overflow-hidden bg-primary px-8 py-4 text-black transition-all hover:bg-white active:translate-y-px font-black text-[10px] uppercase tracking-[0.3em] shadow-[0_0_30px_rgba(0,240,255,0.1)] native-touch"
                     >
                         <span className="flex items-center justify-center gap-3">
                             <Zap className="w-4 h-4" />

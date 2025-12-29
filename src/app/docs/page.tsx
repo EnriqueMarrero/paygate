@@ -123,7 +123,7 @@ export default function Docs() {
                             <button
                                 key={chap.id}
                                 onClick={() => setActiveChapter(chap.id)}
-                                className={`flex-shrink-0 flex items-center gap-3 p-3 text-[10px] uppercase tracking-widest transition-all industrial-border ${activeChapter === chap.id
+                                className={`flex-shrink-0 flex items-center gap-3 p-3 text-[10px] uppercase tracking-widest transition-all industrial-border native-touch ${activeChapter === chap.id
                                     ? "bg-primary/10 text-primary border-primary/20"
                                     : "bg-transparent text-neutral-600 border-transparent hover:text-neutral-300"
                                     }`}

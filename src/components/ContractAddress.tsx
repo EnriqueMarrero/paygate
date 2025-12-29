@@ -22,7 +22,7 @@ export function ContractAddress() {
 
             <button
                 onClick={handleCopy}
-                className="group relative flex items-center justify-between gap-4 p-3 bg-black border border-white/5 hover:border-primary/30 transition-all rounded-sm industrial-border"
+                className="group relative flex items-center justify-between gap-4 p-3 bg-black border border-white/5 hover:border-primary/30 transition-all rounded-sm industrial-border native-touch"
             >
                 <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-primary/10 flex items-center justify-center industrial-border border-primary/20">

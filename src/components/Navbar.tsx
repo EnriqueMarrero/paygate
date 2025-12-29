@@ -52,19 +52,57 @@ export function Navbar() {
                 </div>
 
                 {/* Mobile Toggle */}
-                <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                    {mobileMenuOpen ? <X /> : <Menu />}
+                <button
+                    className="md:hidden text-white p-2 native-touch"
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                >
+                    {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                 </button>
             </div>
 
             {/* Mobile Menu Overlay */}
             {mobileMenuOpen && (
-                <div className="fixed inset-0 top-[60px] bg-black z-40 p-8 flex flex-col gap-8 animate-in slide-in-from-top duration-300">
-                    <Link href="/docs" className="text-xl font-mono text-white uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
-                        <span className="text-primary">01</span> Docs_
-                    </Link>
-                    <div className="mt-auto flex gap-6">
-                        <Twitter className="text-primary" />
+                <div className="fixed inset-0 top-0 bg-black/95 backdrop-blur-xl z-50 p-8 flex flex-col animate-in fade-in slide-in-from-right duration-300">
+                    <div className="flex justify-between items-center mb-12">
+                        <div className="flex items-center gap-2">
+                            <div className="w-6 h-6 bg-primary flex items-center justify-center font-mono font-black text-black text-[10px] industrial-border">
+                                V
+                            </div>
+                            <span className="font-mono text-[10px] tracking-[0.4em] font-black text-white uppercase">VELOCITY_SYS</span>
+                        </div>
+                        <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2 native-touch">
+                            <X className="w-6 h-6" />
+                        </button>
+                    </div>
+
+                    <div className="flex flex-col gap-8">
+                        <Link
+                            href="/"
+                            className="text-2xl font-black font-mono text-white uppercase tracking-widest native-touch flex justify-between items-center"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            <span>00_ Home</span>
+                            <span className="text-primary/20">{">>"}</span>
+                        </Link>
+                        <Link
+                            href="/docs"
+                            className="text-2xl font-black font-mono text-white uppercase tracking-widest native-touch flex justify-between items-center"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            <span>01_ Docs</span>
+                            <span className="text-primary/20">{">>"}</span>
+                        </Link>
+                    </div>
+
+                    <div className="mt-auto border-t border-white/10 pt-8 flex items-center justify-between">
+                        <div className="flex gap-6">
+                            <a href="#" className="text-primary hover:text-white transition-colors native-touch">
+                                <Twitter className="w-6 h-6" />
+                            </a>
+                        </div>
+                        <div className="text-[10px] font-mono text-neutral-600 uppercase tracking-widest">
+                            Release_V2.0.4
+                        </div>
                     </div>
                 </div>
             )}
