@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function ContractAddress() {
     const [copied, setCopied] = useState(false);
-    const CA = "00000000000000000000000000000000"; // REPLACE WITH ACTUAL CA
+    const CA = "DectFg9dVy4EjVcYvqPXRJ3EHK6E74YDZKDZMfc8pump";
 
     const handleCopy = () => {
         navigator.clipboard.writeText(CA);
