@@ -1,107 +1,96 @@
 "use client";
 
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { Github, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { Github, Menu, X, Twitter } from "lucide-react";
+import { useState, useEffect } from "react";
 import { ProModal } from "./ProModal";
 
 export function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
     const [showProModal, setShowProModal] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 20);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <>
-            <nav className="flex items-center justify-between py-4 md:py-6 relative z-50 bg-transparent">
-                <div className="flex items-center gap-3">
+        <nav
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/90 backdrop-blur-md border-b border-primary/20 py-3" : "bg-transparent py-6"
+                }`}
+        >
+            <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between">
+                {/* Brand / Status */}
+                <Link href="/" className="flex items-center gap-6 group">
                     <div className="flex items-center gap-2">
-                        <img src="/paygate.png" alt="PayGate" className="h-10 md:h-12 w-auto rounded-sm" />
-                        <span className="font-mono text-sm tracking-wider font-bold text-white hidden md:block">PAYGATE</span>
+                        <div className="w-6 h-6 bg-primary flex items-center justify-center font-mono font-black text-black text-[10px] industrial-border">
+                            V
+                        </div>
+                        <span className="font-mono text-[10px] tracking-[0.4em] font-black text-white uppercase group-hover:text-primary transition-colors">
+                            VELOCITY_SYS
+                        </span>
                     </div>
-                </div>
+                    <div className="hidden lg:flex items-center gap-3 border-l border-white/10 pl-6">
+                        <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                        <span className="text-[9px] font-mono text-neutral-500 uppercase tracking-widest">Network_Online</span>
+                    </div>
+                </Link>
 
-                <div className="flex items-center gap-2 md:gap-4">
-                    {/* Desktop Socials */}
-                    <div className="hidden md:flex items-center gap-3 pr-4 border-r border-white/10">
-                        <a href="https://x.com/Paygatetools" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
+                {/* Nav Links */}
+                <div className="hidden md:flex items-center gap-8">
+                    <Link href="/docs" className="text-[10px] font-mono text-neutral-400 hover:text-primary uppercase tracking-widest transition-colors flex items-center gap-2">
+                        <span className="text-primary/40">01_</span> System_Docs
+                    </Link>
+                    <button
+                        onClick={() => setShowProModal(true)}
+                        className="text-[10px] font-mono text-neutral-400 hover:text-primary uppercase tracking-widest transition-colors flex items-center gap-2"
+                    >
+                        <span className="text-primary/40">02_</span> Velocity+
+                    </button>
+
+                    <div className="h-4 w-px bg-white/10" />
+
+                    <div className="flex items-center gap-4">
+                        <a href="#" className="text-neutral-500 hover:text-white transition-colors">
+                            <Twitter className="w-4 h-4" />
                         </a>
-                        <a href="https://github.com/paygatetools/Paygatetools" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors">
                             <Github className="w-4 h-4" />
                         </a>
                     </div>
-
-                    {/* PRO Button (Visible on all) */}
-                    <button
-                        onClick={() => setShowProModal(true)}
-                        className="group relative px-4 md:px-6 py-2 bg-gradient-to-r from-amber-200/10 via-yellow-400/10 to-amber-200/10 border border-yellow-500/30 hover:border-yellow-400/50 rounded-md transition-all overflow-hidden"
-                    >
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-200/10 to-transparent translate-x-[-100%] animate-shimmer" />
-                        <span className="relative text-[10px] md:text-xs font-bold tracking-[0.2em] text-yellow-500 group-hover:text-yellow-400 drop-shadow-[0_0_10px_rgba(234,179,8,0.3)]">
-                            PRO
-                        </span>
-                    </button>
-
-                    {/* Desktop Docs Link */}
-                    <Link
-                        href="/docs"
-                        className="hidden md:block px-3 md:px-4 py-2 text-xs md:text-sm border border-white/10 bg-white/5 rounded-md hover:bg-white/10 transition-colors"
-                    >
-                        Docs
-                    </Link>
-
-                    {/* Mobile Hamburger */}
-                    <button
-                        className="md:hidden p-2 text-white hover:bg-white/10 rounded-md transition-colors"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                        {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-                    </button>
                 </div>
-            </nav>
+
+                {/* Mobile Toggle */}
+                <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                    {mobileMenuOpen ? <X /> : <Menu />}
+                </button>
+            </div>
 
             {/* Mobile Menu Overlay */}
-            {isMenuOpen && (
-                <div className="fixed inset-0 top-[72px] z-40 bg-black/95 backdrop-blur-3xl md:hidden animate-in fade-in slide-in-from-top-5 duration-200">
-                    <div className="flex flex-col p-6 space-y-6">
-                        <Link
-                            href="/docs"
-                            onClick={() => setIsMenuOpen(false)}
-                            className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors"
-                        >
-                            <span className="text-lg font-medium text-white">Documentation</span>
-                            <span className="opacity-50">→</span>
-                        </Link>
-
-                        <div className="grid grid-cols-2 gap-4">
-                            <a
-                                href="https://x.com/Paygatetools"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center justify-center gap-2 p-4 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors text-white"
-                            >
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                </svg>
-                                <span>Twitter</span>
-                            </a>
-                            <a
-                                href="https://github.com/paygatetools/Paygatetools"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center justify-center gap-2 p-4 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors text-white"
-                            >
-                                <Github className="w-5 h-5" />
-                                <span>GitHub</span>
-                            </a>
-                        </div>
+            {mobileMenuOpen && (
+                <div className="fixed inset-0 top-[60px] bg-black z-40 p-8 flex flex-col gap-8 animate-in slide-in-from-top duration-300">
+                    <Link href="/docs" className="text-xl font-mono text-white uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
+                        <span className="text-primary">01</span> Docs_
+                    </Link>
+                    <button
+                        onClick={() => {
+                            setShowProModal(true);
+                            setMobileMenuOpen(false);
+                        }}
+                        className="text-xl font-mono text-white text-left uppercase tracking-widest"
+                    >
+                        <span className="text-primary">02</span> Velocity+
+                    </button>
+                    <div className="mt-auto flex gap-6">
+                        <Twitter className="text-primary" />
+                        <Github className="text-primary" />
                     </div>
                 </div>
             )}
 
             <ProModal isOpen={showProModal} onClose={() => setShowProModal(false)} />
-        </>
+        </nav>
     );
 }

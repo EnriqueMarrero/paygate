@@ -13,8 +13,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "PayGate — Solana Micropayments",
-  description: "Frontend-only Solana paywall",
+  title: "VELOCITY — High-Speed Solana Access",
+  description: "The definitive access layer for high-performance Solana applications.",
   icons: {
     icon: "/favicon.ico",
   },
