@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Github, Menu, X, Twitter } from "lucide-react";
+import { Menu, X, Twitter } from "lucide-react";
 import { useState, useEffect } from "react";
 import { ProModal } from "./ProModal";
 
@@ -56,9 +56,6 @@ export function Navbar() {
                         <a href="#" className="text-neutral-500 hover:text-white transition-colors">
                             <Twitter className="w-4 h-4" />
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors">
-                            <Github className="w-4 h-4" />
-                        </a>
                     </div>
                 </div>
 
@@ -85,7 +82,6 @@ export function Navbar() {
                     </button>
                     <div className="mt-auto flex gap-6">
                         <Twitter className="text-primary" />
-                        <Github className="text-primary" />
                     </div>
                 </div>
             )}

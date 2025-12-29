@@ -371,7 +371,6 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/DAVID/paygate/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/DAVID/paygate/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__ = __turbopack_context__.i("[project]/DAVID/paygate/node_modules/lucide-react/dist/esm/icons/github.js [app-ssr] (ecmascript) <export default as Github>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/DAVID/paygate/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript) <export default as Menu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/DAVID/paygate/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__ = __turbopack_context__.i("[project]/DAVID/paygate/node_modules/lucide-react/dist/esm/icons/twitter.js [app-ssr] (ecmascript) <export default as Twitter>");
@@ -507,41 +506,22 @@ function Navbar() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center gap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "#",
-                                        className: "text-neutral-500 hover:text-white transition-colors",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"], {
-                                            className: "w-4 h-4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                            lineNumber: 57,
-                                            columnNumber: 29
-                                        }, this)
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "#",
+                                    className: "text-neutral-500 hover:text-white transition-colors",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"], {
+                                        className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                        lineNumber: 56,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "https://github.com",
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        className: "text-neutral-500 hover:text-white transition-colors",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"], {
-                                            className: "w-4 h-4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                            lineNumber: 60,
-                                            columnNumber: 29
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                        lineNumber: 59,
-                                        columnNumber: 25
+                                        lineNumber: 57,
+                                        columnNumber: 29
                                     }, this)
-                                ]
-                            }, void 0, true, {
+                                }, void 0, false, {
+                                    fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
+                                    lineNumber: 56,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
                                 lineNumber: 55,
                                 columnNumber: 21
@@ -557,16 +537,16 @@ function Navbar() {
                         onClick: ()=>setMobileMenuOpen(!mobileMenuOpen),
                         children: mobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
                             fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                            lineNumber: 67,
+                            lineNumber: 64,
                             columnNumber: 39
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {}, void 0, false, {
                             fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                            lineNumber: 67,
+                            lineNumber: 64,
                             columnNumber: 47
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                        lineNumber: 66,
+                        lineNumber: 63,
                         columnNumber: 17
                     }, this)
                 ]
@@ -588,14 +568,14 @@ function Navbar() {
                                 children: "01"
                             }, void 0, false, {
                                 fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                lineNumber: 75,
+                                lineNumber: 72,
                                 columnNumber: 25
                             }, this),
                             " Docs_"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                        lineNumber: 74,
+                        lineNumber: 71,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -610,43 +590,34 @@ function Navbar() {
                                 children: "02"
                             }, void 0, false, {
                                 fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                lineNumber: 84,
+                                lineNumber: 81,
                                 columnNumber: 25
                             }, this),
                             " Velocity+"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                        lineNumber: 77,
+                        lineNumber: 74,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-auto flex gap-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"], {
-                                className: "text-primary"
-                            }, void 0, false, {
-                                fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                lineNumber: 87,
-                                columnNumber: 25
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"], {
-                                className: "text-primary"
-                            }, void 0, false, {
-                                fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                                lineNumber: 88,
-                                columnNumber: 25
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"], {
+                            className: "text-primary"
+                        }, void 0, false, {
+                            fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
+                            lineNumber: 84,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                        lineNumber: 86,
+                        lineNumber: 83,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                lineNumber: 73,
+                lineNumber: 70,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$src$2f$components$2f$ProModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ProModal"], {
@@ -654,7 +625,7 @@ function Navbar() {
                 onClose: ()=>setShowProModal(false)
             }, void 0, false, {
                 fileName: "[project]/DAVID/paygate/src/components/Navbar.tsx",
-                lineNumber: 93,
+                lineNumber: 89,
                 columnNumber: 13
             }, this)
         ]
