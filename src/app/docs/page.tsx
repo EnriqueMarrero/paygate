@@ -18,6 +18,7 @@ import {
     Lock
 } from "lucide-react";
 import { useState } from "react";
+import { Check } from "lucide-react";
 
 const CHAPTERS = [
     { id: "01", title: "ENVIRONMENT_HANDSHAKE", icon: Shield },
@@ -25,6 +26,79 @@ const CHAPTERS = [
     { id: "03", title: "CONTAINER_MOUNTING", icon: Layers },
     { id: "04", title: "AUTH_VERIFICATION", icon: Lock },
 ];
+
+function CodeFrame({ filename, code, language = "js" }: { filename: string, code: string, language?: string }) {
+    const [copied, setCopied] = useState(false);
+    const lines = code.trim().split("\n");
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(code);
+        setCopied(copied);
+        setTimeout(() => setCopied(false), 2000);
+    };
+
+    return (
+        <div className="group flex flex-col industrial-border border-white/5 bg-black overflow-hidden">
+            {/* Terminal Header */}
+            <div className="flex items-center justify-between px-4 py-2 bg-white/[0.03] border-b border-white/5">
+                <div className="flex items-center gap-3">
+                    <div className="flex gap-1">
+                        <div className="w-1.5 h-1.5 rounded-full bg-white/10" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-white/10" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-white/10" />
+                    </div>
+                    <div className="h-3 w-px bg-white/10 mx-1" />
+                    <div className="flex items-center gap-2">
+                        <FileCode className="w-3 h-3 text-primary/60" />
+                        <span className="text-[9px] font-mono text-neutral-400 uppercase tracking-widest">{filename}</span>
+                    </div>
+                </div>
+                <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-1.5 px-2 py-0.5 bg-primary/10 border border-primary/20">
+                        <div className="w-1 h-1 rounded-full bg-primary animate-pulse" />
+                        <span className="text-[7px] font-mono text-primary uppercase font-black tracking-tighter">Handshake_Verified</span>
+                    </div>
+                    <button
+                        onClick={handleCopy}
+                        className="text-neutral-500 hover:text-white transition-colors"
+                    >
+                        {copied ? <Check className="w-3 h-3 text-emerald-400" /> : <Download className="w-3 h-3" />}
+                    </button>
+                </div>
+            </div>
+
+            {/* Code Body */}
+            <div className="flex overflow-x-auto selection:bg-primary/20">
+                {/* Gutter */}
+                <div className="flex flex-col py-4 px-3 bg-white/[0.01] border-r border-white/5 text-right select-none min-w-[40px]">
+                    {lines.map((_, i) => (
+                        <span key={i} className="text-[9px] font-mono text-neutral-700 leading-relaxed tabular-nums">
+                            {String(i + 1).padStart(2, "0")}
+                        </span>
+                    ))}
+                </div>
+                {/* Lines */}
+                <pre className="flex-1 py-4 px-4 text-[10px] md:text-[11px] leading-relaxed text-neutral-400 font-mono">
+                    {code.trim()}
+                </pre>
+            </div>
+
+            {/* Footer Bar */}
+            <div className="px-4 py-1.5 bg-white/[0.01] border-t border-white/5 flex items-center justify-between">
+                <div className="text-[7px] font-mono text-neutral-600 uppercase tracking-[0.2em]">
+                    Encoding :: UTF-8 // Port :: 443
+                </div>
+                <div className="flex items-center gap-2">
+                    <div className="h-1 w-12 bg-white/5 relative overflow-hidden">
+                        <div className="absolute top-0 left-0 h-full bg-primary/40 w-1/2 animate-shimmer" />
+                    </div>
+                    <span className="text-[7px] font-mono text-primary/40 uppercase">Ready</span>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 
 export default function Docs() {
     const [activeChapter, setActiveChapter] = useState("01");
@@ -49,8 +123,8 @@ export default function Docs() {
                                 key={chap.id}
                                 onClick={() => setActiveChapter(chap.id)}
                                 className={`flex-shrink-0 flex items-center gap-3 p-3 text-[10px] uppercase tracking-widest transition-all industrial-border ${activeChapter === chap.id
-                                        ? "bg-primary/10 text-primary border-primary/20"
-                                        : "bg-transparent text-neutral-600 border-transparent hover:text-neutral-300"
+                                    ? "bg-primary/10 text-primary border-primary/20"
+                                    : "bg-transparent text-neutral-600 border-transparent hover:text-neutral-300"
                                     }`}
                             >
                                 <span className="font-black opacity-40">{chap.id}</span>
@@ -123,14 +197,9 @@ export default function Docs() {
                                     VELOCITY is delivered as a lightweight runtime engine designed for sub-second latency.
                                 </p>
                                 <div className="space-y-4 md:space-y-6">
-                                    <div className="p-4 md:p-6 border border-white/5 bg-black">
-                                        <div className="flex items-center justify-between mb-4">
-                                            <div className="text-[10px] text-primary font-bold flex items-center gap-2">
-                                                <FileCode className="w-3 h-3" /> system_init.js
-                                            </div>
-                                        </div>
-                                        <pre className="text-[9px] md:text-[11px] text-neutral-500 leading-relaxed overflow-x-auto p-2 bg-white/[0.02]">
-                                            {`<script type="module">
+                                    <CodeFrame
+                                        filename="system_init.js"
+                                        code={`<script type="module">
   import { initVelocity } from "./velocity-engine.js";
 
   initVelocity({
@@ -140,8 +209,7 @@ export default function Docs() {
     sol: 0.01
   });
 </script>`}
-                                        </pre>
-                                    </div>
+                                    />
                                 </div>
                             </div>
                         )}

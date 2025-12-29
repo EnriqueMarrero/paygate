@@ -17,13 +17,20 @@ export function Hero() {
                     </h1>
                 </div>
 
-                <div className="max-w-md">
-                    <p className="text-[10px] md:text-xs text-neutral-500 leading-relaxed font-mono uppercase tracking-tight mb-8">
+                <div className="max-w-md space-y-6">
+                    <p className="text-[10px] md:text-xs text-neutral-500 leading-relaxed font-mono uppercase tracking-tight">
                         VELOCITY: High-throughput access layer. <br />
                         Optimized for sub-second handshake verification on the Solana network.
                     </p>
 
-                    <div className="flex flex-wrap gap-4">
+                    <div className="p-4 bg-primary/5 border-l-2 border-primary space-y-2">
+                        <div className="text-[9px] font-mono text-primary font-black tracking-widest uppercase">Value_Prop :: Instant_Income</div>
+                        <p className="text-[11px] text-neutral-400 font-mono uppercase leading-relaxed tracking-tight">
+                            Stop losing sales to slow checkouts. Velocity is the world&apos;s fastest way to sell digital access. No credit cards, no long forms—just one click and your customer is in.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-4 pt-2">
                         <Link
                             href="/docs"
                             className="inline-flex items-center justify-center px-6 py-3 bg-primary text-black hover:bg-white transition-all font-black text-[10px] uppercase tracking-[0.2em]"

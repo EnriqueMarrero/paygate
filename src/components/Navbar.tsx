@@ -3,11 +3,9 @@
 import Link from "next/link";
 import { Menu, X, Twitter } from "lucide-react";
 import { useState, useEffect } from "react";
-import { ProModal } from "./ProModal";
 
 export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
-    const [showProModal, setShowProModal] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -43,12 +41,6 @@ export function Navbar() {
                     <Link href="/docs" className="text-[10px] font-mono text-neutral-400 hover:text-primary uppercase tracking-widest transition-colors flex items-center gap-2">
                         <span className="text-primary/40">01_</span> System_Docs
                     </Link>
-                    <button
-                        onClick={() => setShowProModal(true)}
-                        className="text-[10px] font-mono text-neutral-400 hover:text-primary uppercase tracking-widest transition-colors flex items-center gap-2"
-                    >
-                        <span className="text-primary/40">02_</span> Velocity+
-                    </button>
 
                     <div className="h-4 w-px bg-white/10" />
 
@@ -71,22 +63,11 @@ export function Navbar() {
                     <Link href="/docs" className="text-xl font-mono text-white uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
                         <span className="text-primary">01</span> Docs_
                     </Link>
-                    <button
-                        onClick={() => {
-                            setShowProModal(true);
-                            setMobileMenuOpen(false);
-                        }}
-                        className="text-xl font-mono text-white text-left uppercase tracking-widest"
-                    >
-                        <span className="text-primary">02</span> Velocity+
-                    </button>
                     <div className="mt-auto flex gap-6">
                         <Twitter className="text-primary" />
                     </div>
                 </div>
             )}
-
-            <ProModal isOpen={showProModal} onClose={() => setShowProModal(false)} />
         </nav>
     );
 }

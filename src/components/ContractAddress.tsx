@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Check, Terminal } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Copy, Check, Hash } from "lucide-react";
 
 export function ContractAddress() {
     const [copied, setCopied] = useState(false);
@@ -15,26 +14,42 @@ export function ContractAddress() {
     };
 
     return (
-        <button
-            onClick={handleCopy}
-            className="group relative inline-flex items-center gap-3 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-full transition-all active:scale-[0.98]"
-        >
-            <div className="flex items-center gap-2 text-sm font-bold text-white tracking-wide">
-                <span className="text-primary">$VEL</span>
-                <span className="text-white/20">|</span>
+        <div className="flex flex-col gap-2">
+            <div className="flex items-center justify-between text-[8px] font-mono text-neutral-600 uppercase tracking-[0.2em]">
+                <span>Asset_Type :: SPL_Token</span>
+                <span className="text-primary/40">Status :: Verified</span>
             </div>
 
-            <div className="flex items-center gap-2 text-xs font-mono text-neutral-400 group-hover:text-white transition-colors">
-                <span>CA: {CA.slice(0, 4)}...{CA.slice(-4)}</span>
-            </div>
+            <button
+                onClick={handleCopy}
+                className="group relative flex items-center justify-between gap-4 p-3 bg-black border border-white/5 hover:border-primary/30 transition-all rounded-sm industrial-border"
+            >
+                <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-primary/10 flex items-center justify-center industrial-border border-primary/20">
+                        <span className="text-[10px] font-black text-primary">$V</span>
+                    </div>
+                    <div className="text-left">
+                        <div className="text-[8px] font-mono text-neutral-600 uppercase tracking-widest">Protocol_Asset</div>
+                        <div className="text-[10px] font-mono font-bold text-white tracking-tighter">
+                            {CA.slice(0, 8)}...{CA.slice(-8)}
+                        </div>
+                    </div>
+                </div>
 
-            <div className="pl-2 border-l border-white/10 text-neutral-500 group-hover:text-white">
-                {copied ? (
-                    <Check className="w-3 h-3 text-emerald-400" />
-                ) : (
-                    <Copy className="w-3 h-3" />
-                )}
-            </div>
-        </button>
+                <div className="flex items-center gap-3 pl-4 border-l border-white/5">
+                    {copied ? (
+                        <div className="flex items-center gap-1.5">
+                            <Check className="w-3 h-3 text-emerald-400" />
+                            <span className="text-[7px] font-mono text-emerald-400 uppercase tracking-tighter">Copied</span>
+                        </div>
+                    ) : (
+                        <div className="flex items-center gap-1.5 opacity-30 group-hover:opacity-100 transition-opacity">
+                            <Copy className="w-3 h-3 text-white" />
+                            <span className="text-[7px] font-mono text-white uppercase tracking-tighter">Copy_ID</span>
+                        </div>
+                    )}
+                </div>
+            </button>
+        </div>
     );
 }
