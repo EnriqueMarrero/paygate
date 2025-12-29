@@ -1,0 +1,11 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a193661b._.js")
+R.c("server/chunks/ssr/DAVID_paygate_3de9b260._.js")
+R.c("server/chunks/ssr/55b4b_next_dist_a5dd14ab._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__3b36b775._.js")
+R.c("server/chunks/ssr/55b4b_next_dist_10a6e74c._.js")
+R.c("server/chunks/ssr/55b4b_next_dist_d3f40a18._.js")
+R.c("server/chunks/ssr/DAVID_paygate_src_app_745e2150._.js")
+R.c("server/chunks/ssr/DAVID_paygate__next-internal_server_app__global-error_page_actions_91af0f79.js")
+R.m(21488)
+module.exports=R.m(21488).exports
