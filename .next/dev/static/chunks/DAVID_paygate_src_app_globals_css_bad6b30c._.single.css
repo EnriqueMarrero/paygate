@@ -98,6 +98,7 @@
     --color-neutral-500: #737373;
     --color-neutral-600: #525252;
     --color-neutral-700: #404040;
+    --color-neutral-800: #262626;
     --color-neutral-900: #171717;
     --color-black: #000;
     --color-white: #fff;
@@ -186,6 +187,7 @@
       --color-neutral-500: lab(48.496% 0 0);
       --color-neutral-600: lab(34.924% 0 0);
       --color-neutral-700: lab(27.036% 0 0);
+      --color-neutral-800: lab(15.204% 0 -.00000596046);
       --color-neutral-900: lab(7.78201% -.0000149012 0);
     }
   }
@@ -675,6 +677,10 @@
 
   .mt-auto {
     margin-top: auto;
+  }
+
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
   }
 
   .mb-1 {
@@ -1616,6 +1622,10 @@
     }
   }
 
+  .bg-neutral-800 {
+    background-color: var(--color-neutral-800);
+  }
+
   .bg-neutral-900 {
     background-color: var(--color-neutral-900);
   }
@@ -2244,6 +2254,10 @@
 
   .text-neutral-700 {
     color: var(--color-neutral-700);
+  }
+
+  .text-neutral-800 {
+    color: var(--color-neutral-800);
   }
 
   .text-primary {

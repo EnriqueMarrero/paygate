@@ -86,15 +86,15 @@ function Hero() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-3xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter leading-[0.85] uppercase",
                                 children: [
-                                    "Unrivaled",
+                                    "Instant",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/DAVID/paygate/src/components/Hero.tsx",
                                         lineNumber: 15,
-                                        columnNumber: 34
+                                        columnNumber: 32
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-primary font-black uppercase",
-                                        children: "Performance."
+                                        children: "Access."
                                     }, void 0, false, {
                                         fileName: "[project]/DAVID/paygate/src/components/Hero.tsx",
                                         lineNumber: 16,

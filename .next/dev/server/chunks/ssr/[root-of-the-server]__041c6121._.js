@@ -653,78 +653,48 @@ function VelocityVault() {
                 className: "p-6 border-b border-white/5 space-y-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex justify-between items-start",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-1",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-xs font-bold font-mono tracking-[0.3em] uppercase text-white/40",
-                                    children: "Vault::Handshake"
-                                }, void 0, false, {
-                                    fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                    lineNumber: 205,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-2 h-2 bg-primary rounded-full animate-ping"
-                                        }, void 0, false, {
-                                            fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                            lineNumber: 207,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-xs font-mono font-bold text-white uppercase tracking-widest",
-                                            children: "Protocol 402_Active"
-                                        }, void 0, false, {
-                                            fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                            lineNumber: 208,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                    lineNumber: 206,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                            lineNumber: 204,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-right",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-[10px] font-mono text-neutral-600 uppercase",
-                                    children: "Input_Cap"
-                                }, void 0, false, {
-                                    fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                    lineNumber: 212,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-sm font-mono font-bold text-primary",
-                                    children: [
-                                        SOL_AMOUNT,
-                                        " SOL"
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                    lineNumber: 213,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                            lineNumber: 211,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "space-y-1",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-xs font-bold font-mono tracking-[0.3em] uppercase text-white/40",
+                                children: "Vault::Handshake"
+                            }, void 0, false, {
+                                fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
+                                lineNumber: 205,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-2 h-2 bg-primary rounded-full animate-ping"
+                                    }, void 0, false, {
+                                        fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
+                                        lineNumber: 207,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-xs font-mono font-bold text-white uppercase tracking-widest",
+                                        children: "Protocol 402_Active"
+                                    }, void 0, false, {
+                                        fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
+                                        lineNumber: 208,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
+                                lineNumber: 206,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
+                        lineNumber: 204,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
                     lineNumber: 203,
                     columnNumber: 17
@@ -741,7 +711,7 @@ function VelocityVault() {
                         className: "w-full max-w-[200px] h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                        lineNumber: 220,
+                        lineNumber: 216,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -749,7 +719,7 @@ function VelocityVault() {
                         children: "Vault verification requires a native SOL handshake. Initialize the engine to synchronize state and unlock data."
                     }, void 0, false, {
                         fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                        lineNumber: 222,
+                        lineNumber: 218,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -763,14 +733,14 @@ function VelocityVault() {
                                     className: "w-4 h-4 animate-spin"
                                 }, void 0, false, {
                                     fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                    lineNumber: 233,
+                                    lineNumber: 229,
                                     columnNumber: 29
                                 }, this),
                                 "Synchronizing..."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                            lineNumber: 232,
+                            lineNumber: 228,
                             columnNumber: 25
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "flex items-center justify-center gap-3",
@@ -779,25 +749,25 @@ function VelocityVault() {
                                     className: "w-4 h-4"
                                 }, void 0, false, {
                                     fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                    lineNumber: 238,
+                                    lineNumber: 234,
                                     columnNumber: 29
                                 }, this),
                                 "Initialize_Handshake"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                            lineNumber: 237,
+                            lineNumber: 233,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                        lineNumber: 226,
+                        lineNumber: 222,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                lineNumber: 219,
+                lineNumber: 215,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -810,7 +780,7 @@ function VelocityVault() {
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-1 h-1 rounded-full", loading ? "bg-amber-500 animate-pulse" : "bg-emerald-500")
                             }, void 0, false, {
                                 fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                lineNumber: 248,
+                                lineNumber: 244,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -818,13 +788,13 @@ function VelocityVault() {
                                 children: status
                             }, void 0, false, {
                                 fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                                lineNumber: 249,
+                                lineNumber: 245,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                        lineNumber: 247,
+                        lineNumber: 243,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$DAVID$2f$paygate$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -832,13 +802,13 @@ function VelocityVault() {
                         children: "Devnet_Stable"
                     }, void 0, false, {
                         fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                        lineNumber: 251,
+                        lineNumber: 247,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/DAVID/paygate/src/components/VelocityVault.tsx",
-                lineNumber: 246,
+                lineNumber: 242,
                 columnNumber: 13
             }, this)
         ]

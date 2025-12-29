@@ -74,7 +74,7 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$s
 ;
 ;
 const metadata = {
-    title: "VELOCITY — High-Speed Solana Access",
+    title: "VELOCITY — Instant Digital Access",
     description: "The definitive access layer for high-performance Solana applications.",
     icons: {
         icon: "/favicon.ico"

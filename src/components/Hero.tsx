@@ -12,8 +12,8 @@ export function Hero() {
                         System Initialization :: Active
                     </div>
                     <h1 className="text-3xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter leading-[0.85] uppercase">
-                        Unrivaled<br />
-                        <span className="text-primary font-black uppercase">Performance.</span>
+                        Instant<br />
+                        <span className="text-primary font-black uppercase">Access.</span>
                     </h1>
                 </div>
 
